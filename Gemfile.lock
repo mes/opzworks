@@ -9,7 +9,7 @@ PATH
       chef-config (~> 12.16.42)
       cleanroom
       diffy (~> 3.1.0)
-      faraday (~> 1.0)
+      faraday (~> 1.0.0)
       hashie (~> 3.4.6)
       httpclient (~> 2.8.2.4)
       inifile (~> 3.0.0)
@@ -88,7 +88,7 @@ GEM
     cleanroom (1.0.0)
     diffy (3.1.0)
     erubis (2.7.0)
-    faraday (1.0)
+    faraday (1.0.0)
       multipart-post (>= 1.2, < 3)
     fuzzyurl (0.9.0)
     hashie (3.4.6)
