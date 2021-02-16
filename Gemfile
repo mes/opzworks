@@ -20,3 +20,7 @@ gem 'octokit',
 gem 'ridley',
     git: 'https://github.com/mes/ridley.git',
     branch: 'update-faraday'
+
+gem 'berkshelf-api-client',
+    git: 'https://github.com/mes/berkshelf-api-client.git',
+    branch: 'update-faraday'
