@@ -64,6 +64,8 @@ PATH
     opzworks (0.13.0.4)
       addressable (~> 2.5.0)
       aws-sdk (~> 2.7)
+      berkshelf
+      berkshelf-api-client
       chef-config (~> 12.16.42)
       cleanroom
       diffy (~> 3.1.0)
@@ -78,6 +80,7 @@ PATH
       net-ssh (~> 3.0.2)
       net-ssh-multi (~> 1.2.1)
       nio4r (~> 2)
+      octokit (~> 4.6)
       public_suffix (~> 2.0.4)
       rainbow (~> 2.2.1)
       sawyer (~> 0.8)

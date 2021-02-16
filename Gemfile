@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # Specify your gem's dependencies in opzworks.gemspec
 gemspec
 
-# Add forked dependencies here as gemspec does not support that 
+# Include forked dependencies here since gemspec does not support those
 gem 'berkshelf',
     git: 'https://github.com/mes/berkshelf.git',
     branch: 'update-faraday'
