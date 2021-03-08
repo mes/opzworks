@@ -71,7 +71,7 @@ GIT
 PATH
   remote: .
   specs:
-    opzworks (0.13.0.5)
+    opzworks (0.13.0.6)
       addressable (~> 2.5.0)
       aws-sdk-opsworks (~> 1.31)
       aws-sdk-s3 (~> 1.88, >= 1.88.1)
