@@ -1,7 +1,77 @@
+GIT
+  remote: https://github.com/mes/berkshelf-api-client.git
+  revision: 9cb8bc662436973547b178d660a275046c0f3354
+  branch: update-faraday
+  specs:
+    berkshelf-api-client (3.0.0)
+      faraday (~> 1.0)
+      httpclient (~> 2.7)
+      ridley (>= 4.5, < 6.0)
+
+GIT
+  remote: https://github.com/mes/berkshelf.git
+  revision: 315cbc11b60caf7ea118e0175511dc6927d6381b
+  branch: update-faraday
+  specs:
+    berkshelf (5.5.0)
+      addressable (~> 2.3, >= 2.3.4)
+      berkshelf-api-client (>= 2.0.2, < 4.0)
+      buff-config (~> 2.0)
+      buff-extensions (~> 2.0)
+      buff-shell_out (~> 1.0)
+      cleanroom (~> 1.0)
+      httpclient (~> 2.7)
+      minitar (~> 0.5, >= 0.5.4)
+      mixlib-archive (~> 0.1)
+      retryable (~> 2.0)
+      solve (> 2.0, < 4.0)
+      thor (~> 0.19, < 0.19.2)
+
+GIT
+  remote: https://github.com/mes/faraday-http-cache.git
+  revision: e3bca4e3274b87ad826320339299498b44919110
+  branch: update-faraday
+  specs:
+    faraday-http-cache (2.2.0)
+      faraday (~> 1.0)
+
+GIT
+  remote: https://github.com/mes/octokit.rb.git
+  revision: 03e149410a8a35d0715153e0d35736dee78ce6e9
+  branch: update-faraday
+  specs:
+    octokit (4.20.0)
+      faraday (~> 1.0)
+      sawyer (~> 0.8.0, >= 0.5.3)
+
+GIT
+  remote: https://github.com/mes/ridley.git
+  revision: e29b3ebb206411687c4462b5a0e6ae257776cd11
+  branch: update-faraday
+  specs:
+    ridley (5.1.1)
+      addressable
+      buff-config (~> 2.0)
+      buff-extensions (~> 2.0)
+      buff-ignore (~> 1.2)
+      buff-shell_out (~> 1.0)
+      celluloid (~> 0.16.0)
+      celluloid-io (~> 0.16.1)
+      chef-config (>= 12.5.0)
+      erubis
+      faraday (~> 1.0)
+      hashie (>= 2.0.2, < 4.0.0)
+      httpclient (~> 2.7)
+      json (>= 1.7.7)
+      mixlib-authentication (>= 1.3.0)
+      retryable (~> 2.0)
+      semverse (~> 2.0)
+      varia_model (~> 0.6)
+
 PATH
   remote: .
   specs:
-    opzworks (0.13.0.5)
+    opzworks (0.13.0.6)
       addressable (~> 2.8.0)
       aws-sdk-opsworks (~> 1.31)
       aws-sdk-s3 (~> 1.88, >= 1.88.1)
@@ -10,7 +80,7 @@ PATH
       chef-config (~> 12.16.42)
       cleanroom
       diffy (~> 3.1.0)
-      faraday (~> 0.9)
+      faraday (~> 1.0.0)
       hashie (~> 3.4.6)
       httpclient (~> 2.8.2.4)
       inifile (~> 3.0.0)
@@ -25,7 +95,7 @@ PATH
       public_suffix (~> 2.0.4)
       rainbow (~> 2.2.1)
       sawyer (~> 0.8)
-      solve (~> 3.0.1)
+      solve (~> 3.1.1)
       thor (~> 0.19)
       trollop (~> 2.0)
       trollop-subcommands
@@ -56,26 +126,6 @@ GEM
       aws-sigv4 (~> 1.1)
     aws-sigv4 (1.2.4)
       aws-eventstream (~> 1, >= 1.0.2)
-    berkshelf (5.2.0)
-      addressable (~> 2.3, >= 2.3.4)
-      berkshelf-api-client (>= 2.0.2, < 4.0)
-      buff-config (~> 2.0)
-      buff-extensions (~> 2.0)
-      buff-shell_out (~> 1.0)
-      cleanroom (~> 1.0)
-      faraday (~> 0.9)
-      httpclient (~> 2.7)
-      minitar (~> 0.5, >= 0.5.4)
-      mixlib-archive (~> 0.1)
-      octokit (~> 4.0)
-      retryable (~> 2.0)
-      ridley (~> 5.0)
-      solve (> 2.0, < 4.0)
-      thor (~> 0.19)
-    berkshelf-api-client (3.0.0)
-      faraday (~> 0.9)
-      httpclient (~> 2.7)
-      ridley (>= 4.5, < 6.0)
     buff-config (2.0.0)
       buff-extensions (~> 2.0)
       varia_model (~> 0.6)
@@ -98,7 +148,7 @@ GEM
     cleanroom (1.0.0)
     diffy (3.1.0)
     erubis (2.7.0)
-    faraday (0.17.4)
+    faraday (1.0.0)
       multipart-post (>= 1.2, < 3)
     fuzzyurl (0.9.0)
     hashie (3.4.6)
@@ -124,9 +174,6 @@ GEM
       net-ssh (>= 2.6.5)
       net-ssh-gateway (>= 1.2.0)
     nio4r (2.5.7)
-    octokit (4.21.0)
-      faraday (>= 0.9)
-      sawyer (~> 0.8.0, >= 0.5.3)
     parser (2.4.0.0)
       ast (~> 2.2)
     powerpack (0.1.1)
@@ -135,24 +182,6 @@ GEM
       rake
     rake (12.0.0)
     retryable (2.0.4)
-    ridley (5.1.1)
-      addressable
-      buff-config (~> 2.0)
-      buff-extensions (~> 2.0)
-      buff-ignore (~> 1.2)
-      buff-shell_out (~> 1.0)
-      celluloid (~> 0.16.0)
-      celluloid-io (~> 0.16.1)
-      chef-config (>= 12.5.0)
-      erubis
-      faraday (~> 0.9)
-      hashie (>= 2.0.2, < 4.0.0)
-      httpclient (~> 2.7)
-      json (>= 1.7.7)
-      mixlib-authentication (>= 1.3.0)
-      retryable (~> 2.0)
-      semverse (~> 2.0)
-      varia_model (~> 0.6)
     rubocop (0.37.2)
       parser (>= 2.3.0.4, < 3.0)
       powerpack (~> 0.1)
@@ -164,10 +193,10 @@ GEM
       addressable (>= 2.3.5)
       faraday (> 0.8, < 2.0)
     semverse (2.0.0)
-    solve (3.0.1)
-      molinillo (~> 0.4)
+    solve (3.1.1)
+      molinillo (>= 0.5)
       semverse (>= 1.1, < 3.0)
-    thor (0.20.3)
+    thor (0.19.1)
     timers (4.0.4)
       hitimes
     tomlrb (2.0.1)
@@ -184,10 +213,15 @@ PLATFORMS
 
 DEPENDENCIES
   awesome_print
+  berkshelf!
+  berkshelf-api-client!
   bundler (~> 1.11)
   byebug
+  faraday-http-cache!
+  octokit!
   opzworks!
   rake
+  ridley!
   rubocop (~> 0.37)
 
 BUNDLED WITH
